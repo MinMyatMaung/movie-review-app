@@ -1,0 +1,85 @@
+:root {
+    --bg-main: #1b1f2a;
+    --bg-card: #242a38;
+    --bg-input: #eaeaea;
+    --accent: #5bc0be;
+    --text-main: #ffffff;
+    --text-dark: #000000;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-main);
+    font-family: sans-serif;
+    color: var(--text-main);
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: var(--bg-main);
+    padding: 10px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: var(--text-main);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.2 rem;
+    text-transform: uppercase;
+}
+
+.topnav .search-container {
+    float: right;
+}
+
+.topnav a:hover {
+    color: var(--accent);
+}
+
+form {
+    background-color: var(--bg-card);
+    width: 300px;
+    height: 43px;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    font: 15px system-ui;
+    color: var(--text-dark);
+    background-color: var(--bg-input);  
+    height: 100%;
+    width: 100%;
+    padding: 6px 9px;
+}
+
+.thumbnail {
+    height: 350px;
+    width: 300px;
+    border-radius: 19px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px 10px;
+}
+
+.card {
+    border-radius: 19px;
+    padding: 15px;
+    text-align: center;
+    background-color: var(--bg-card);
+}
+
+.card h3:hover {
+    color: var(--accent);
+}
